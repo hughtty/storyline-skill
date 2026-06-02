@@ -83,14 +83,57 @@ storyline-director（主技能 / 调度器）
 
 ## 🚀 快速开始
 
-### 1. 克隆项目
+### 1. 安装技能
+
+#### 方法一：直接安装（推荐）
+
+将技能文件夹复制到你的 Claude Code 技能目录：
+
+```bash
+# macOS/Linux
+mkdir -p ~/.claude/skills
+cp -r .claude/skills/storyline-director ~/.claude/skills/
+cp -r .claude/skills/character-manager ~/.claude/skills/
+cp -r .claude/skills/world-builder ~/.claude/skills/
+cp -r .claude/skills/story-outline ~/.claude/skills/
+cp -r .claude/skills/teaching-nodes ~/.claude/skills/
+cp -r .claude/skills/script-writer ~/.claude/skills/
+```
+
+安装完成后，在 Claude Code 中即可通过自然语言触发技能，例如：
+> "我要为一个四年级数学课设计剧情故事，知识点是分数的初步认识"
+
+#### 方法二：使用 .skill 文件安装
+
+本项目已预打包 `.skill` 文件，可直接安装：
+
+```bash
+# 下载 .skill 文件后，放入 Claude Code 技能目录
+# 具体路径取决于你的 Claude Code 配置
+```
+
+#### 方法三：从源码安装（开发者）
 
 ```bash
 git clone https://github.com/hughtty/storyline-skill.git
 cd storyline-skill
 ```
 
-### 2. 项目结构
+然后按方法一复制 `.claude/skills/` 下的所有技能文件夹。
+
+### 2. 验证安装
+
+启动 Claude Code，输入以下任一指令测试技能是否生效：
+
+```
+帮我创建一个教育剧情项目
+设计一个数学课的故事梗概
+我要写一节课的动画分镜脚本
+```
+
+如果 Claude 自动调用 storyline-director 或其子技能，说明安装成功。
+
+### 3. 项目结构
 
 ```
 storyline-skill/
@@ -128,7 +171,9 @@ storyline-skill/
     └── test-run-advanced/ep01/  # 高年级测试（证据谎言）
 ```
 
-### 3. 使用流程
+### 4. 使用流程
+
+安装完成后，在 Claude Code 中直接描述你的需求即可开始创作：
 
 ```
 Step 1: 项目初始化（新建 / 延续）

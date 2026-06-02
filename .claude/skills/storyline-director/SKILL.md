@@ -1,3 +1,14 @@
+---
+name: storyline-director
+description: >
+  教育项目剧情故事创作的主调度技能。当用户需要为教育课程创建剧情故事、
+  教学动画脚本、角色驱动的教学素材，或提到"课程故事""教学剧情""课件脚本""教育动画"
+  "直播课剧情""知识点故事"等场景时必须使用此技能。
+  负责协调 character-manager、world-builder、story-outline、teaching-nodes、script-writer
+  等子技能完成完整的剧情素材创作流程。包含项目初始化、需求采集、故事梗概生成、
+  教学节点设计、脚本撰写和交付等完整生命周期管理。
+---
+
 # storyline-director
 
 为教育项目提供剧情故事创作的主调度技能，负责管理项目生命周期、协调子技能完成剧情素材产出。

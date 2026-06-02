@@ -1,0 +1,18 @@
+{
+  "project_id": "{PROJECT_ID}",
+  "name": "{项目名称}",
+  "subject": "{学科}",
+  "created_at": "{YYYY-MM-DD}",
+  "updated_at": "{YYYY-MM-DD}",
+  "status": "active",
+  "episodes": [],
+  "characters": {
+    "ip": [],
+    "npc": []
+  },
+  "worldview": "worldview.md",
+  "settings": {
+    "default_grade": "{默认年级}",
+    "episode_format": "live_stream"
+  }
+}

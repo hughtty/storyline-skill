@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-06-02T12:00:00Z",
+  "nodes": {
+    "ep01": {
+      "episode_id": "ep01",
+      "title": "被封印的魔法书",
+      "type": "主线",
+      "knowledge_point": "一般现在时",
+      "knowledge_point_slug": "simple-present-tense",
+      "subject": "英语",
+      "grade": "三年级",
+      "status": "completed",
+      "created_at": "2024-06-01",
+      "summary": "小智和小慧在魔法图书馆发现被封印的魔法书，通过学会一般现在时解开三把锁",
+      "opening_hook": "三把锁需要说出太阳升起、月亮落下、星星闪烁的规律",
+      "ending_hook_resolved": "利用一般现在时解开三把锁，获得魔法书",
+      "ending_hook_new": "门后是新路，尽头有更神秘的石门（时间密室）",
+      "next_episode_hint": "时间密室，与'过去'有关",
+      "next_knowledge_point": "一般过去时",
+      "files": {
+        "story_outline": "episodes/ep01/story_outline.md",
+        "teaching_nodes": "episodes/ep01/teaching_nodes.md",
+        "opening_storyboard": "episodes/ep01/opening_storyboard.md",
+        "ending_storyboard": "episodes/ep01/ending_storyboard.md",
+        "node_scripts": "episodes/ep01/node_scripts.md"
+      }
+    }
+  },
+  "edges": [],
+  "hooks_registry": {
+    "active_hooks": [
+      {
+        "hook_id": "hook-ep01-01",
+        "episode_id": "ep01",
+        "hook_type": "下集预告",
+        "description": "时间密室的悬念，与过去时相关",
+        "target_knowledge_point": "一般过去时",
+        "status": "待回收",
+        "projected_recovery_episode": "ep02"
+      }
+    ],
+    "resolved_hooks": [
+      {
+        "hook_id": "hook-ep01-02",
+        "episode_id": "ep01",
+        "hook_type": "开场悬念",
+        "description": "三把锁的规律之谜",
+        "recovery_node": "节点05",
+        "status": "已回收"
+      }
+    ]
+  }
+}

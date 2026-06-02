@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-06-02T12:00:00Z",
+  "characters": {
+    "小智": {
+      "name": "小智",
+      "type": "ip",
+      "core_personality": "勇敢但莽撞",
+      "personality_hash": "brave_impulsive_direct_emotional",
+      "file": "shared_library/characters/ip/小智.md",
+      "subjects": ["英语", "语文"],
+      "frequency": "主角",
+      "created_at": "2024-06-01",
+      "appearances": [
+        {
+          "episode_id": "ep01",
+          "episode_title": "被封印的魔法书",
+          "subject": "英语",
+          "grade": "三年级",
+          "role": "主角",
+          "role_type": "遭遇困境型",
+          "arc_description": "从想硬掰魔法书到学会用规律思考",
+          "arc_type": "成长型",
+          "personality_in_episode": "勇敢莽撞，冲动想硬来",
+          "consistency_check": "passed"
+        }
+      ],
+      "relationships": {
+        "小慧": {
+          "relation_type": "搭档",
+          "dynamic": "互补（冲动 vs 谨慎）",
+          "evolution": "信任加深",
+          "first_meeting": "ep01",
+          "relationship_history": [
+            {
+              "episode_id": "ep01",
+              "state": "互相信任的搭档",
+              "key_moment": "小慧阻止小智硬掰魔法书，引导他学习规律"
+            }
+          ]
+        }
+      },
+      "character_arc": {
+        "starting_belief": "遇到困难直接冲",
+        "arc_type": "从莽撞到学会思考",
+        "arc_progress": 0.2,
+        "projected_completion": "ep05"
+      },
+      "tags": ["勇敢", "莽撞", "主角", "热血", "成长型"]
+    },
+    "小慧": {
+      "name": "小慧",
+      "type": "ip",
+      "core_personality": "聪明谨慎",
+      "personality_hash": "intelligent_cautious_analytical_supportive",
+      "file": "shared_library/characters/ip/小慧.md",
+      "subjects": ["英语", "数学"],
+      "frequency": "主角",
+      "created_at": "2024-06-01",
+      "appearances": [
+        {
+          "episode_id": "ep01",
+          "episode_title": "被封印的魔法书",
+          "subject": "英语",
+          "grade": "三年级",
+          "role": "主角",
+          "role_type": "引导型",
+          "arc_description": "冷静分析，引导小智学习规律",
+          "arc_type": "稳定型",
+          "personality_in_episode": "聪明冷静，善于分析",
+          "consistency_check": "passed"
+        }
+      ],
+      "relationships": {
+        "小智": {
+          "relation_type": "搭档",
+          "dynamic": "互补（谨慎 vs 冲动）",
+          "evolution": "信任加深",
+          "first_meeting": "ep01",
+          "relationship_history": [
+            {
+              "episode_id": "ep01",
+              "state": "互相信任的搭档",
+              "key_moment": "阻止小智冲动，引导学习"
+            }
+          ]
+        }
+      },
+      "character_arc": {
+        "starting_belief": "知识是解决问题的关键",
+        "arc_type": "稳定型",
+        "arc_progress": 0.1,
+        "projected_completion": null
+      },
+      "tags": ["聪明", "谨慎", "主角", "理性", "分析型"]
+    }
+  },
+  "relationship_graph": {
+    "nodes": ["小智", "小慧"],
+    "edges": [
+      {
+        "from": "小智",
+        "to": "小慧",
+        "relation": "搭档",
+        "dynamic": "互补",
+        "strength": 0.8,
+        "first_episode": "ep01"
+      }
+    ]
+  }
+}

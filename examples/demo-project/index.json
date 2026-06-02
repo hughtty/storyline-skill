@@ -1,0 +1,101 @@
+{
+  "project_id": "magic-english-academy",
+  "name": "魔法英语学院",
+  "subject": "英语",
+  "created_at": "2024-06-01",
+  "updated_at": "2024-06-02",
+  "status": "active",
+  "worldview_summary": "平行世界，魔法的力量来自对语言规律的掌握。魔法学院培养语言魔法师。",
+  "worldview_file": "worldview.md",
+  "settings": {
+    "default_grade": "三年级",
+    "episode_format": "live_stream",
+    "cognitive_level_default": "低年级"
+  },
+  "statistics": {
+    "total_episodes": 1,
+    "total_characters": 2,
+    "main_storyline_episodes": 1,
+    "side_storyline_episodes": 0,
+    "cross_episode_arcs": 0
+  },
+  "characters": {
+    "ip": ["小智", "小慧"],
+    "npc": []
+  },
+  "characters_index": {
+    "小智": {
+      "type": "ip",
+      "file": "shared_library/characters/ip/小智.md",
+      "core_personality": "勇敢但莽撞",
+      "subjects": ["英语", "语文"],
+      "frequency": "主角",
+      "appearances_count": 1,
+      "first_appearance": "ep01",
+      "last_appearance": "ep01"
+    },
+    "小慧": {
+      "type": "ip",
+      "file": "shared_library/characters/ip/小慧.md",
+      "core_personality": "聪明谨慎",
+      "subjects": ["英语", "数学"],
+      "frequency": "主角",
+      "appearances_count": 1,
+      "first_appearance": "ep01",
+      "last_appearance": "ep01"
+    }
+  },
+  "episodes": [
+    {
+      "episode_id": "ep01",
+      "title": "被封印的魔法书",
+      "knowledge_point": "一般现在时",
+      "knowledge_point_slug": "simple-present-tense",
+      "subject": "英语",
+      "grade": "三年级",
+      "episode_type": "主线",
+      "status": "completed",
+      "created_at": "2024-06-01",
+      "updated_at": "2024-06-01",
+      "files": {
+        "story_outline": "episodes/ep01/story_outline.md",
+        "teaching_nodes": "episodes/ep01/teaching_nodes.md",
+        "opening_storyboard": "episodes/ep01/opening_storyboard.md",
+        "ending_storyboard": "episodes/ep01/ending_storyboard.md",
+        "node_scripts": "episodes/ep01/node_scripts.md"
+      },
+      "characters_used": ["小智", "小慧"],
+      "storyline_pattern": "钥匙模式",
+      "cognitive_level": "低年级",
+      "estimated_duration": {
+        "opening": 90,
+        "teaching": 1800,
+        "ending": 90
+      }
+    }
+  ],
+  "storylines": {
+    "main": ["ep01"],
+    "side": [],
+    "cross": {}
+  },
+  "knowledge_map": {
+    "英语": {
+      "三年级": {
+        "时态": {
+          "一般现在时": {
+            "episodes": ["ep01"],
+            "prerequisites": [],
+            "next": ["一般过去时"],
+            "related_patterns": ["钥匙模式"]
+          }
+        }
+      }
+    }
+  },
+  "consistency_status": {
+    "last_check": "2024-06-02T12:00:00Z",
+    "status": "passed",
+    "violations": []
+  }
+}
